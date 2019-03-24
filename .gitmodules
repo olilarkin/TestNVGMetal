@@ -1,0 +1,6 @@
+[submodule "TestNVGMetal/MetalNanoVG"]
+	path = TestNVGMetal/MetalNanoVG
+	url = https://github.com/ollix/MetalNanoVG.git
+[submodule "TestNVGMetal/nanovg"]
+	path = TestNVGMetal/nanovg
+	url = https://github.com/memononen/nanovg

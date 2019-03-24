@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FADA1A822479D830085BA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA1A722479D830085BA3A /* AppDelegate.m */; };
+		4FADA1AB22479D830085BA3A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA1AA22479D830085BA3A /* Renderer.m */; };
+		4FADA1AE22479D830085BA3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA1AD22479D830085BA3A /* ViewController.m */; };
+		4FADA1B322479D840085BA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FADA1B222479D840085BA3A /* Assets.xcassets */; };
+		4FADA1B622479D840085BA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FADA1B422479D840085BA3A /* Main.storyboard */; };
+		4FADA1B922479D840085BA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA1B822479D840085BA3A /* main.m */; };
+		4FADA2072247A0060085BA3A /* nanovg.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA20622479FFE0085BA3A /* nanovg.c */; };
+		4FADA2082247ABB20085BA3A /* nanovg_mtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FADA1C822479FFE0085BA3A /* nanovg_mtl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FADA1A322479D830085BA3A /* TestNVGMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNVGMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FADA1A622479D830085BA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FADA1A722479D830085BA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FADA1A922479D830085BA3A /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		4FADA1AA22479D830085BA3A /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		4FADA1AC22479D830085BA3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4FADA1AD22479D830085BA3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4FADA1B222479D840085BA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FADA1B522479D840085BA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FADA1B722479D840085BA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FADA1B822479D840085BA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FADA1BA22479D840085BA3A /* TestNVGMetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestNVGMetal.entitlements; sourceTree = "<group>"; };
+		4FADA1C222479FFE0085BA3A /* metallib */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = metallib; sourceTree = "<group>"; };
+		4FADA1C322479FFE0085BA3A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4FADA1C422479FFE0085BA3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4FADA1C522479FFE0085BA3A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4FADA1C722479FFE0085BA3A /* nanovg_mtl_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = nanovg_mtl_shaders.metal; sourceTree = "<group>"; };
+		4FADA1C822479FFE0085BA3A /* nanovg_mtl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nanovg_mtl.m; sourceTree = "<group>"; };
+		4FADA1CA22479FFE0085BA3A /* macos_1_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macos_1_2.h; sourceTree = "<group>"; };
+		4FADA1CB22479FFE0085BA3A /* ios_2_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_2_1.h; sourceTree = "<group>"; };
+		4FADA1CC22479FFE0085BA3A /* tvos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tvos.h; sourceTree = "<group>"; };
+		4FADA1CD22479FFE0085BA3A /* ios_1_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_1_1.h; sourceTree = "<group>"; };
+		4FADA1CE22479FFE0085BA3A /* macos_2_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macos_2_1.h; sourceTree = "<group>"; };
+		4FADA1CF22479FFE0085BA3A /* macos_1_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macos_1_1.h; sourceTree = "<group>"; };
+		4FADA1D022479FFE0085BA3A /* ios_1_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_1_2.h; sourceTree = "<group>"; };
+		4FADA1D122479FFE0085BA3A /* macos_2_0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macos_2_0.h; sourceTree = "<group>"; };
+		4FADA1D222479FFE0085BA3A /* ios_2_0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_2_0.h; sourceTree = "<group>"; };
+		4FADA1D322479FFE0085BA3A /* ios_1_0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_1_0.h; sourceTree = "<group>"; };
+		4FADA1D422479FFE0085BA3A /* nanovg_mtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg_mtl.h; sourceTree = "<group>"; };
+		4FADA1D722479FFE0085BA3A /* nanovg_gl2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg_gl2.h; sourceTree = "<group>"; };
+		4FADA1D822479FFE0085BA3A /* obsolete.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = obsolete.md; sourceTree = "<group>"; };
+		4FADA1D922479FFE0085BA3A /* nanovg_gl3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg_gl3.h; sourceTree = "<group>"; };
+		4FADA1DB22479FFE0085BA3A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		4FADA1DC22479FFE0085BA3A /* entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = entypo.ttf; sourceTree = "<group>"; };
+		4FADA1DD22479FFE0085BA3A /* example_gles2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example_gles2.c; sourceTree = "<group>"; };
+		4FADA1DE22479FFE0085BA3A /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		4FADA1DF22479FFE0085BA3A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4FADA1E122479FFE0085BA3A /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
+		4FADA1E222479FFE0085BA3A /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
+		4FADA1E322479FFE0085BA3A /* image12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image12.jpg; sourceTree = "<group>"; };
+		4FADA1E422479FFE0085BA3A /* image11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image11.jpg; sourceTree = "<group>"; };
+		4FADA1E522479FFE0085BA3A /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
+		4FADA1E622479FFE0085BA3A /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
+		4FADA1E722479FFE0085BA3A /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		4FADA1E822479FFE0085BA3A /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		4FADA1E922479FFE0085BA3A /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		4FADA1EA22479FFE0085BA3A /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		4FADA1EB22479FFE0085BA3A /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		4FADA1EC22479FFE0085BA3A /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		4FADA1ED22479FFE0085BA3A /* perf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = perf.c; sourceTree = "<group>"; };
+		4FADA1EE22479FFE0085BA3A /* example_gl3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example_gl3.c; sourceTree = "<group>"; };
+		4FADA1EF22479FFE0085BA3A /* demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
+		4FADA1F022479FFE0085BA3A /* example_gl2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example_gl2.c; sourceTree = "<group>"; };
+		4FADA1F122479FFE0085BA3A /* example_fbo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example_fbo.c; sourceTree = "<group>"; };
+		4FADA1F222479FFE0085BA3A /* NotoEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoEmoji-Regular.ttf"; sourceTree = "<group>"; };
+		4FADA1F322479FFE0085BA3A /* images.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = images.txt; sourceTree = "<group>"; };
+		4FADA1F422479FFE0085BA3A /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
+		4FADA1F522479FFE0085BA3A /* perf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = perf.h; sourceTree = "<group>"; };
+		4FADA1F622479FFE0085BA3A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4FADA1F722479FFE0085BA3A /* screenshot-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-02.png"; sourceTree = "<group>"; };
+		4FADA1F822479FFE0085BA3A /* example_gles3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example_gles3.c; sourceTree = "<group>"; };
+		4FADA1F922479FFE0085BA3A /* screenshot-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-01.png"; sourceTree = "<group>"; };
+		4FADA1FA22479FFE0085BA3A /* LICENSE_OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE_OFL.txt; sourceTree = "<group>"; };
+		4FADA1FB22479FFE0085BA3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4FADA1FC22479FFE0085BA3A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4FADA1FD22479FFE0085BA3A /* premake4.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = premake4.lua; sourceTree = "<group>"; };
+		4FADA1FE22479FFE0085BA3A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4FADA20022479FFE0085BA3A /* nanovg_gl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg_gl.h; sourceTree = "<group>"; };
+		4FADA20122479FFE0085BA3A /* nanovg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg.h; sourceTree = "<group>"; };
+		4FADA20222479FFE0085BA3A /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		4FADA20322479FFE0085BA3A /* stb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		4FADA20422479FFE0085BA3A /* fontstash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fontstash.h; sourceTree = "<group>"; };
+		4FADA20522479FFE0085BA3A /* nanovg_gl_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanovg_gl_utils.h; sourceTree = "<group>"; };
+		4FADA20622479FFE0085BA3A /* nanovg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nanovg.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FADA1A022479D830085BA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FADA19A22479D830085BA3A = {
+			isa = PBXGroup;
+			children = (
+				4FADA1C022479FFE0085BA3A /* MetalNanoVG */,
+				4FADA1D522479FFE0085BA3A /* nanovg */,
+				4FADA1A522479D830085BA3A /* TestNVGMetal */,
+				4FADA1A422479D830085BA3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FADA1A422479D830085BA3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1A322479D830085BA3A /* TestNVGMetal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FADA1A522479D830085BA3A /* TestNVGMetal */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1A622479D830085BA3A /* AppDelegate.h */,
+				4FADA1A722479D830085BA3A /* AppDelegate.m */,
+				4FADA1A922479D830085BA3A /* Renderer.h */,
+				4FADA1AA22479D830085BA3A /* Renderer.m */,
+				4FADA1AC22479D830085BA3A /* ViewController.h */,
+				4FADA1AD22479D830085BA3A /* ViewController.m */,
+				4FADA1B222479D840085BA3A /* Assets.xcassets */,
+				4FADA1B422479D840085BA3A /* Main.storyboard */,
+				4FADA1B722479D840085BA3A /* Info.plist */,
+				4FADA1B822479D840085BA3A /* main.m */,
+				4FADA1BA22479D840085BA3A /* TestNVGMetal.entitlements */,
+			);
+			path = TestNVGMetal;
+			sourceTree = "<group>";
+		};
+		4FADA1C022479FFE0085BA3A /* MetalNanoVG */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1C122479FFE0085BA3A /* tools */,
+				4FADA1C322479FFE0085BA3A /* LICENSE */,
+				4FADA1C422479FFE0085BA3A /* README.md */,
+				4FADA1C522479FFE0085BA3A /* .gitignore */,
+				4FADA1C622479FFE0085BA3A /* src */,
+			);
+			name = MetalNanoVG;
+			path = TestNVGMetal/MetalNanoVG;
+			sourceTree = "<group>";
+		};
+		4FADA1C122479FFE0085BA3A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1C222479FFE0085BA3A /* metallib */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		4FADA1C622479FFE0085BA3A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1C722479FFE0085BA3A /* nanovg_mtl_shaders.metal */,
+				4FADA1C822479FFE0085BA3A /* nanovg_mtl.m */,
+				4FADA1C922479FFE0085BA3A /* mnvg_bitcode */,
+				4FADA1D422479FFE0085BA3A /* nanovg_mtl.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4FADA1C922479FFE0085BA3A /* mnvg_bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1CA22479FFE0085BA3A /* macos_1_2.h */,
+				4FADA1CB22479FFE0085BA3A /* ios_2_1.h */,
+				4FADA1CC22479FFE0085BA3A /* tvos.h */,
+				4FADA1CD22479FFE0085BA3A /* ios_1_1.h */,
+				4FADA1CE22479FFE0085BA3A /* macos_2_1.h */,
+				4FADA1CF22479FFE0085BA3A /* macos_1_1.h */,
+				4FADA1D022479FFE0085BA3A /* ios_1_2.h */,
+				4FADA1D122479FFE0085BA3A /* macos_2_0.h */,
+				4FADA1D222479FFE0085BA3A /* ios_2_0.h */,
+				4FADA1D322479FFE0085BA3A /* ios_1_0.h */,
+			);
+			path = mnvg_bitcode;
+			sourceTree = "<group>";
+		};
+		4FADA1D522479FFE0085BA3A /* nanovg */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1D622479FFE0085BA3A /* obsolete */,
+				4FADA1DA22479FFE0085BA3A /* example */,
+				4FADA1FB22479FFE0085BA3A /* README.md */,
+				4FADA1FC22479FFE0085BA3A /* .gitignore */,
+				4FADA1FD22479FFE0085BA3A /* premake4.lua */,
+				4FADA1FE22479FFE0085BA3A /* LICENSE.txt */,
+				4FADA1FF22479FFE0085BA3A /* src */,
+			);
+			name = nanovg;
+			path = TestNVGMetal/nanovg;
+			sourceTree = "<group>";
+		};
+		4FADA1D622479FFE0085BA3A /* obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1D722479FFE0085BA3A /* nanovg_gl2.h */,
+				4FADA1D822479FFE0085BA3A /* obsolete.md */,
+				4FADA1D922479FFE0085BA3A /* nanovg_gl3.h */,
+			);
+			path = obsolete;
+			sourceTree = "<group>";
+		};
+		4FADA1DA22479FFE0085BA3A /* example */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1DB22479FFE0085BA3A /* Roboto-Light.ttf */,
+				4FADA1DC22479FFE0085BA3A /* entypo.ttf */,
+				4FADA1DD22479FFE0085BA3A /* example_gles2.c */,
+				4FADA1DE22479FFE0085BA3A /* stb_image_write.h */,
+				4FADA1DF22479FFE0085BA3A /* Roboto-Regular.ttf */,
+				4FADA1E022479FFE0085BA3A /* images */,
+				4FADA1ED22479FFE0085BA3A /* perf.c */,
+				4FADA1EE22479FFE0085BA3A /* example_gl3.c */,
+				4FADA1EF22479FFE0085BA3A /* demo.h */,
+				4FADA1F022479FFE0085BA3A /* example_gl2.c */,
+				4FADA1F122479FFE0085BA3A /* example_fbo.c */,
+				4FADA1F222479FFE0085BA3A /* NotoEmoji-Regular.ttf */,
+				4FADA1F322479FFE0085BA3A /* images.txt */,
+				4FADA1F422479FFE0085BA3A /* demo.c */,
+				4FADA1F522479FFE0085BA3A /* perf.h */,
+				4FADA1F622479FFE0085BA3A /* Roboto-Bold.ttf */,
+				4FADA1F722479FFE0085BA3A /* screenshot-02.png */,
+				4FADA1F822479FFE0085BA3A /* example_gles3.c */,
+				4FADA1F922479FFE0085BA3A /* screenshot-01.png */,
+				4FADA1FA22479FFE0085BA3A /* LICENSE_OFL.txt */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		4FADA1E022479FFE0085BA3A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA1E122479FFE0085BA3A /* image8.jpg */,
+				4FADA1E222479FFE0085BA3A /* image9.jpg */,
+				4FADA1E322479FFE0085BA3A /* image12.jpg */,
+				4FADA1E422479FFE0085BA3A /* image11.jpg */,
+				4FADA1E522479FFE0085BA3A /* image10.jpg */,
+				4FADA1E622479FFE0085BA3A /* image7.jpg */,
+				4FADA1E722479FFE0085BA3A /* image6.jpg */,
+				4FADA1E822479FFE0085BA3A /* image4.jpg */,
+				4FADA1E922479FFE0085BA3A /* image5.jpg */,
+				4FADA1EA22479FFE0085BA3A /* image1.jpg */,
+				4FADA1EB22479FFE0085BA3A /* image2.jpg */,
+				4FADA1EC22479FFE0085BA3A /* image3.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		4FADA1FF22479FFE0085BA3A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA20022479FFE0085BA3A /* nanovg_gl.h */,
+				4FADA20122479FFE0085BA3A /* nanovg.h */,
+				4FADA20222479FFE0085BA3A /* stb_image.h */,
+				4FADA20322479FFE0085BA3A /* stb_truetype.h */,
+				4FADA20422479FFE0085BA3A /* fontstash.h */,
+				4FADA20522479FFE0085BA3A /* nanovg_gl_utils.h */,
+				4FADA20622479FFE0085BA3A /* nanovg.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FADA1A222479D830085BA3A /* TestNVGMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FADA1BD22479D840085BA3A /* Build configuration list for PBXNativeTarget "TestNVGMetal" */;
+			buildPhases = (
+				4FADA19F22479D830085BA3A /* Sources */,
+				4FADA1A022479D830085BA3A /* Frameworks */,
+				4FADA1A122479D830085BA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestNVGMetal;
+			productName = TestNVGMetal;
+			productReference = 4FADA1A322479D830085BA3A /* TestNVGMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FADA19B22479D830085BA3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Oliver Larkin";
+				TargetAttributes = {
+					4FADA1A222479D830085BA3A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4FADA19E22479D830085BA3A /* Build configuration list for PBXProject "TestNVGMetal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FADA19A22479D830085BA3A;
+			productRefGroup = 4FADA1A422479D830085BA3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FADA1A222479D830085BA3A /* TestNVGMetal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FADA1A122479D830085BA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FADA1B322479D840085BA3A /* Assets.xcassets in Resources */,
+				4FADA1B622479D840085BA3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FADA19F22479D830085BA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FADA1B922479D840085BA3A /* main.m in Sources */,
+				4FADA1AB22479D830085BA3A /* Renderer.m in Sources */,
+				4FADA2072247A0060085BA3A /* nanovg.c in Sources */,
+				4FADA1AE22479D830085BA3A /* ViewController.m in Sources */,
+				4FADA2082247ABB20085BA3A /* nanovg_mtl.m in Sources */,
+				4FADA1A822479D830085BA3A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FADA1B422479D840085BA3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FADA1B522479D840085BA3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FADA1BB22479D840085BA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					MetalNanoVG/src,
+					nanovg/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4FADA1BC22479D840085BA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					MetalNanoVG/src,
+					nanovg/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4FADA1BE22479D840085BA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestNVGMetal/TestNVGMetal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 686EDA2T8T;
+				INFOPLIST_FILE = TestNVGMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oli.TestNVGMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FADA1BF22479D840085BA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestNVGMetal/TestNVGMetal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 686EDA2T8T;
+				INFOPLIST_FILE = TestNVGMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oli.TestNVGMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADA19E22479D830085BA3A /* Build configuration list for PBXProject "TestNVGMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADA1BB22479D840085BA3A /* Debug */,
+				4FADA1BC22479D840085BA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FADA1BD22479D840085BA3A /* Build configuration list for PBXNativeTarget "TestNVGMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADA1BE22479D840085BA3A /* Debug */,
+				4FADA1BF22479D840085BA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FADA19B22479D830085BA3A /* Project object */;
+}
